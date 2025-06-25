@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 *::selection {
     background-color: transparent;
 }
@@ -1451,7 +1457,6 @@ noscript {
 /* footer starts */
 .footercontainer {
     background-color: rgb(0, 0, 0);
-    width: 100%;
 }
 
 .two-words {
