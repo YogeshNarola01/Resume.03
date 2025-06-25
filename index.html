@@ -41,9 +41,18 @@
 </head>
 
 <body class="body">
-    <!-- <audio loop="" id="audioPlayer" autoplay="" style="display:none">
+    <audio loop="" id="audioPlayer" autoplay="" style="display:none">
         <source src="src/mp3/preloader.mp3" type="audio/mp3">
-    </audio> -->
+    </audio>
+
+    <script>
+        setTimeout(() => {
+            const audio = document.getElementById("audioPlayer");
+            audio.muted = false;
+            audio.play().catch(err => console.warn("Autoplay blocked:", err));
+        }, 1000);
+    </script>
+
     <div id="preloader"></div>
     <noscript>Allow Javascript</noscript>
 
