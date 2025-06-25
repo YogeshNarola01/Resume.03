@@ -1,0 +1,334 @@
+/* Base styles */
+
+/* Responsive Images and Media */
+img,
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    /* Prevents extra space below images */
+}
+
+/* =====================================
+           1. Layout & Container Utilities
+           ===================================== */
+.container {
+    width: 100%;
+    max-width: 1240px;
+    /* Max width for desktop */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* =====================================
+           2. Flexbox Utilities (Row & Flex)
+           ===================================== */
+.row,
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows items to wrap to the next line on smaller screens */
+}
+
+/* Justify Content */
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+/* Align Items */
+.items-start {
+    align-items: flex-start;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-end {
+    align-items: flex-end;
+}
+
+/* =====================================
+           3. Gap Utilities
+           ===================================== */
+/* These apply gaps between flex items */
+.gap-1 {
+    gap: 4px;
+}
+
+.gap-2 {
+    gap: 8px;
+}
+
+.gap-3 {
+    gap: 16px;
+}
+
+.gap-4 {
+    gap: 24px;
+}
+
+/* =====================================
+           4. Width Utilities (12-Column Grid)
+              - Mobile-first by default (w-*)
+              - sm: for small screens (e.g., tablets in portrait)
+              - md: for medium screens (e.g., tablets in landscape, small laptops)
+              - lg: for large screens (e.g., desktops)
+           ===================================== */
+
+/* Default widths (for mobile and up) */
+.w-full {
+    width: 100%;
+}
+
+.w-1 {
+    width: 8.333%;
+}
+
+.w-2 {
+    width: 16.666%;
+}
+
+.w-3 {
+    width: 25%;
+}
+
+.w-4 {
+    width: 33.333%;
+}
+
+.w-5 {
+    width: 41.666%;
+}
+
+.w-6 {
+    width: 50%;
+}
+
+.w-7 {
+    width: 58.333%;
+}
+
+.w-8 {
+    width: 66.666%;
+}
+
+.w-9 {
+    width: 75%;
+}
+
+.w-10 {
+    width: 83.333%;
+}
+
+.w-11 {
+    width: 91.666%;
+}
+
+.w-12 {
+    width: 100%;
+}
+
+/* Redundant with w-full but kept for consistency */
+
+/* Small Screens (sm) - Min-width 576px */
+@media (min-width: 576px) {
+    .w-sm-1 {
+        width: 8.333%;
+    }
+
+    .w-sm-2 {
+        width: 16.666%;
+    }
+
+    .w-sm-3 {
+        width: 25%;
+    }
+
+    .w-sm-4 {
+        width: 33.333%;
+    }
+
+    .w-sm-5 {
+        width: 41.666%;
+    }
+
+    .w-sm-6 {
+        width: 50%;
+    }
+
+    .w-sm-7 {
+        width: 58.333%;
+    }
+
+    .w-sm-8 {
+        width: 66.666%;
+    }
+
+    .w-sm-9 {
+        width: 75%;
+    }
+
+    .w-sm-10 {
+        width: 83.333%;
+    }
+
+    .w-sm-11 {
+        width: 91.666%;
+    }
+
+    .w-sm-12 {
+        width: 100%;
+    }
+}
+
+/* Medium Screens (md) - Min-width 768px */
+@media (min-width: 768px) {
+
+    /* Your provided w-md classes, adjusted for systematic naming */
+    .w-md-1 {
+        width: 8.333%;
+    }
+
+    .w-md-2 {
+        width: 16.666%;
+    }
+
+    .w-md-3 {
+        width: 25%;
+    }
+
+    .w-md-4 {
+        width: 33.333%;
+    }
+
+    .w-md-5 {
+        width: 41.666%;
+    }
+
+    .w-md-6 {
+        width: 50%;
+    }
+
+    .w-md-7 {
+        width: 58.333%;
+    }
+
+    .w-md-8 {
+        width: 66.666%;
+    }
+
+    .w-md-9 {
+        width: 75%;
+    }
+
+    .w-md-10 {
+        width: 83.333%;
+    }
+
+    .w-md-11 {
+        width: 91.666%;
+    }
+
+    .w-md-12 {
+        width: 100%;
+    }
+}
+
+/* Large Screens (lg) - Min-width 1024px */
+@media (min-width: 1024px) {
+
+    /* Your provided w-lg-4, adjusted to common 12-col percentage */
+    .w-lg-1 {
+        width: 8.333%;
+    }
+
+    .w-lg-2 {
+        width: 16.666%;
+    }
+
+    .w-lg-3 {
+        width: 25%;
+    }
+
+    .w-lg-4 {
+        width: 33.333%;
+    }
+
+    /* Adjusted from 31.5% for standard grid */
+    .w-lg-5 {
+        width: 41.666%;
+    }
+
+    .w-lg-6 {
+        width: 50%;
+    }
+
+    .w-lg-7 {
+        width: 58.333%;
+    }
+
+    .w-lg-8 {
+        width: 66.666%;
+    }
+
+    .w-lg-9 {
+        width: 75%;
+    }
+
+    .w-lg-10 {
+        width: 83.333%;
+    }
+
+    .w-lg-11 {
+        width: 91.666%;
+    }
+
+    .w-lg-12 {
+        width: 100%;
+    }
+}
+
+/* =====================================
+           5. Example Component Styling
+              (for demonstration purposes)
+           ===================================== */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+    /* Allows card to grow within flex container */
+    flex-shrink: 0;
+    /* Prevents card from shrinking below its content */
+    box-sizing: border-box;
+    /* Include padding in width */
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #555;
+}

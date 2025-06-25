@@ -1,0 +1,145 @@
+.contact-section {
+    padding: 100px 0px;
+}
+
+.contact-wrapper {
+    /* gap: 40px; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-tag {
+    padding-right: 10px;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #fff, #ffcfdf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: fira code;
+}
+
+.section-subtitle {
+    color: #ccc;
+    margin: 10px 0 20px;
+    font-size: 1.6rem;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    color: #eee;
+    font-size: 1.76rem;
+    font-family: fira code;
+}
+
+.email-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info li {
+    margin-bottom: 12px;
+}
+
+.contact-form-area form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    animation: slideInUp 0.8s ease forwards;
+}
+
+.contact-form-area input,
+.contact-form-area textarea {
+    padding: 8px 16px;
+    border: 1px solid #333;
+    border-radius: 6px;
+    background: #1b1b1b;
+    color: #eee;
+    font-size: 1.4rem;
+    font-family: fira code;
+}
+
+.contact-form-area button {
+    padding: 12px;
+    background: #fff;
+    border: none;
+    color: #111;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-family: fira code;
+}
+
+.contact-form-area button:hover {
+    background: #ffcfdf;
+}
+
+.form-response {
+    font-size: 0.9rem;
+    color: #0f0;
+    margin-top: 8px;
+}
+
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-li {
+    line-height: 1.8;
+}
+
+.contact-detail {
+    display: block;
+    color: #eee;
+    margin-top: 4px;
+}
+
+.email-link {
+    color: #b0f3f1;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.email-link:hover {
+    color: #ffcfdf;
+}
+
+.contact-intro {
+    margin-bottom: 20px;
+}
+
+.contact-intro h4 {
+    font-size: 2.3rem;
+    color: #fff;
+    margin-bottom: 8px;
+    font-family: fira code;
+}
+
+.contact-intro p {
+    font-size: 1.6rem;
+    color: #ccc;
+}

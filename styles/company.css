@@ -1,0 +1,146 @@
+.companies-section {
+    padding: 80px 0px;
+}
+
+.section-heading-article {
+    font-size: 2.5rem;
+    font-family: 'Fira Code', monospace;
+    background: linear-gradient(90deg, #b0f3f1, #ffcfdf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sectionHeadingLine {
+    flex-grow: 1;
+    height: 1px;
+    background: linear-gradient(90deg, #b0f3f1, #ffcfdf);
+}
+
+.company-card {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 25px 20px;
+    border-radius: 12px;
+    margin-top: 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.company-name {
+    font-size: 2.8rem;
+    color: #fff;
+    font-family: fira code;
+    margin-bottom: 10px;
+}
+
+.company-card p {
+    font-size: 1.6rem;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.company-card ul {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+.company-card li {
+    color: #aaa;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+    .company-card {
+        text-align: center;
+    }
+
+    .company-card ul {
+        padding-left: 0;
+        list-style: none;
+    }
+
+    .company-card li::before {
+        content: "• ";
+        color: #ffcfdf;
+    }
+}
+
+.company-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;
+}
+
+.company-logo img {
+    width: 250px;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .company-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .company-logo {
+        justify-content: center;
+    }
+
+    .company-info {
+        width: 100%;
+    }
+
+    .company-logo {
+        width: 100%;
+    }
+}
+
+.company-socials {
+    margin-top: 20px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.social-icon {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 20%;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    filter: brightness(0.9);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icon:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.company-cta {
+    margin-top: 15px;
+    font-size: 0.95rem;
+    color: #ccc;
+}
+
+.company-cta-i a {
+    color: #d7cfff;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.company-cta-s a {
+    color: #ffcfdf;
+    text-decoration: underline;
+    font-weight: 500;
+}
