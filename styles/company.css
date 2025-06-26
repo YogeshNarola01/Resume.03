@@ -99,6 +99,12 @@
 
     .company-logo {
         width: 100%;
+        padding-top: 30px;
+    }
+
+    .company-socials {
+        display: flex;
+        justify-content: center;
     }
 }
 

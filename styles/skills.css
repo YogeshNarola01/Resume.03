@@ -24,6 +24,13 @@
     font-weight: 500;
 }
 
+.value-subtitle {
+    font-size: 2.8rem;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
